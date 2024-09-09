@@ -1,0 +1,72 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* Apply global styles to all elements */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  font-family: "Poppins", sans-serif; /* Set default font to Poppins */
+}
+
+body {
+  height: 100vh; /* Full viewport height */
+  background: #4070f4; /* Background color */
+}
+
+/* Flexbox alignment for main layout components */
+body, .container, .button, .links, .link {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Center align items vertically */
+  justify-content: center; /* Center align items horizontally */
+}
+
+.container {
+  padding: 20px; /* Add padding inside container */
+  border-radius: 8px; /* Round corners of the container */
+  column-gap: 12px; /* Space between columns */
+  background: #fff; /* Background color of container */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.button {
+  border: none; /* Remove default border */
+}
+
+.button i {
+  pointer-events: none; /* Disable pointer events on icons */
+}
+
+.button:disabled {
+  color: #b3b3b3; /* Light grey color for disabled buttons */
+  pointer-events: none; /* Prevent interaction with disabled buttons */
+}
+
+.button, .link {
+  height: 45px; /* Set height of buttons and links */
+  width: 45px; /* Set width of buttons and links */
+  font-size: 20px; /* Font size for icons and text */
+  color: #666666; /* Default text color */
+  background-color: #f2f2f2; /* Background color of buttons and links */
+  border-radius: 6px; /* Round corners of buttons and links */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.links {
+  column-gap: 12px; /* Space between pagination links */
+}
+
+.link {
+  font-weight: 500; /* Medium font weight for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.button:hover, .link:hover {
+  color: #fff; /* White text color on hover */
+  background: #4070f4; /* Background color on hover */
+}
+
+.link.active {
+  color: #fff; /* White text color for active link */
+  background: #4070f4; /* Background color for active link */
+}
