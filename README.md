@@ -18,7 +18,7 @@ This project is a **high-performance, fully customizable pagination system** bui
 
 ## 📸 Demo
 
-![Pagination Demo](link_to_demo_image_or_gif)  
+![Pagination Demo](./assets/project.gif)  
 *Example of the pagination in action.*
 
 ## 📂 Project Structure
